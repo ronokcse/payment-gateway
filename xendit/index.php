@@ -8,6 +8,4 @@
 </head>
 <body>
     <a href="checkout.php" class="btn btn-primary">Checkout</a>
-    <<button type="checkout">checkout</button>
 </html>
-
