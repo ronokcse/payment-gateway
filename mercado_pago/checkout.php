@@ -18,13 +18,18 @@
         $payment->payment_method_id = $payment_method_id;
         $payment->issuer_id = $issuer_id;
         $payment->payer = array(
-            "email" => "cndkcnkdnc@gmail.com"
+            "email" => "test_user_123456@testuser.com"
+
+            // user invalid for register email. Email must be register in marcado pago account
         );
             // Armazena e envia o pagamento
         $save = $payment->save();
+
+        echo "<pre>";
+         print_r($payment);
           //...
             // Imprime o status do pagamento
-        echo '<pre>';
-       print_r($payment);
+      echo '---------------------------------------------------------------';
         echo $payment->status;
+        exit;
 ?>
